@@ -1,13 +1,11 @@
 <template>
   <section class="page assets-page">
-    <m-header>资产</m-header>
-    <scroll class="mid-page" :probeType="probeType" :listenScroll="listenScroll">
+    <scroll class="top-page">
       <div class="page-content">
-
+        资产页面
       </div>
     </scroll>
     <m-nav></m-nav>
-
   </section>
 </template>
 
@@ -21,8 +19,6 @@
     components: {MNav, Scroll, MHeader},
     data() {
       return {
-        probeType:3,
-        listenScroll:true
       }
     }
   }

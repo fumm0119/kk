@@ -1,12 +1,20 @@
 <template>
   <div class="account-page">
-    我的页面
+    <scroll class="top-page">
+      <section class="content">
+        中间的内容
+      </section>
+    </scroll>
+    <m-nav></m-nav>
   </div>
 </template>
 
 <script>
+  import Scroll from "../../components/scroll/scroll";
+  import MNav from "../../components/m-nav/m-nav";
   export default {
-    name: "account"
+    name: "account",
+    components: {MNav, Scroll}
   }
 </script>
 
