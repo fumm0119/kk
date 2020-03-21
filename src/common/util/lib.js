@@ -101,5 +101,13 @@ export default {
   removeAuth(uid) {
     window.localStorage.removeItem('HAS_AUTH_' + uid);
   },
+
+  /**
+   * 是否登录
+   * @returns {boolean}
+   */
+  isLogin() {
+    return cookie.get('LOGIN_TOKEN') ? true : false;
+  },
 }
 

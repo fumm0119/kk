@@ -18,6 +18,18 @@
 
   export default {
     name: "m-nav",
+    created() {
+      let locationUrl = window.location.href;
+      if (locationUrl.indexOf('financial') > -1) {
+        this.current_page = 'financial'
+      } else if (locationUrl.indexOf('assets') > -1) {
+        this.current_page = 'assets'
+      } else if (locationUrl.indexOf('account') > -1) {
+        this.current_page = 'account'
+      } else {
+        this.current_page = 'index'
+      }
+    },
     data() {
       return {
         navList: [
